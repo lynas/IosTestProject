@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FTPopOverMenu_Swift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let configuration = FTConfiguration()
+        
+        
+        
+        
+        var backgoundTintColor : UIColor = UIColor.white
+        var textColor : UIColor = UIColor.white
+        /*    configuration.menuWidth = ...
+            configuration.textColor =
+            configuration.textFont = ...
+            configuration.tintColor = ...
+            configuration.borderColor = ...
+            configuration.borderWidth = ...
+            configuration.textAlignment = ...
+            configuration.ignoreImageOriginalColor = ...;*/
+        
         return true
     }
 
