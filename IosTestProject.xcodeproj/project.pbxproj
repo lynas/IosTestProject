@@ -13,6 +13,7 @@
 		FC2219EB1E3B2A0000E4F582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2219E91E3B2A0000E4F582 /* Main.storyboard */; };
 		FC2219ED1E3B2A0000E4F582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2219EC1E3B2A0000E4F582 /* Assets.xcassets */; };
 		FC2219F01E3B2A0000E4F582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2219EE1E3B2A0000E4F582 /* LaunchScreen.storyboard */; };
+		FC523F3E1E3B2E0F00898975 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC523F3D1E3B2E0F00898975 /* PhotoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FC2219EC1E3B2A0000E4F582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2219EF1E3B2A0000E4F582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC2219F11E3B2A0000E4F582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC523F3D1E3B2E0F00898975 /* PhotoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		FC2219E41E3B2A0000E4F582 /* IosTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				FC523F3C1E3B2DF400898975 /* service */,
 				FC2219E51E3B2A0000E4F582 /* AppDelegate.swift */,
 				FC2219E71E3B2A0000E4F582 /* ViewController.swift */,
 				FC2219E91E3B2A0000E4F582 /* Main.storyboard */,
@@ -86,6 +89,14 @@
 				FC2219F11E3B2A0000E4F582 /* Info.plist */,
 			);
 			path = IosTestProject;
+			sourceTree = "<group>";
+		};
+		FC523F3C1E3B2DF400898975 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				FC523F3D1E3B2E0F00898975 /* PhotoService.swift */,
+			);
+			name = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			files = (
 				FC2219E81E3B2A0000E4F582 /* ViewController.swift in Sources */,
 				FC2219E61E3B2A0000E4F582 /* AppDelegate.swift in Sources */,
+				FC523F3E1E3B2E0F00898975 /* PhotoService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +391,7 @@
 				FC2219F61E3B2A0000E4F582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
