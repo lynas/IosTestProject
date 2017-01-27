@@ -7,4 +7,5 @@ target 'IosTestProject' do
 
   # Pods for IosTestProject
   pod 'RxAlamofire'
+  pod 'SwiftPopMenu'
 end
