@@ -18,16 +18,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func createButton(_ sender: UIButton) {
-        pservice.createAlbum(name: albumName, completion: {
-            ph in
-            
-        })
+        
     }
     
     @IBAction func getButton(_ sender: UIButton) {
         pservice.getAlbum(name: albumName, completion: {
             album in
             print(album?.estimatedAssetCount ?? 0)
+            let image = UIImage(named: "IMG_2315")
+            
+            self.pservice.saveImage(image: image!, toAlbum: self.albumName, completion: {
+                (success, error) in
+                if error == nil {
+                    if success {
+                        print("save successful")
+                    } else {
+                        print("save unsuccess")
+                    }
+                }
+            })
         })
     }
     
